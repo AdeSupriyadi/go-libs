@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-	privateKey := []byte("just private key")
-	plainText := "palin text"
+	privateKey := []byte("ZHdy2k72FxQjz9yN")
+	plainText := "d3v3l0pm3n7"
 	encrypted, err := aes.Encrypt(privateKey, privateKey, []byte(plainText))
 	if err != nil {
 		panic(err.Error())
