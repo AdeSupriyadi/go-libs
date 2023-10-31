@@ -5,7 +5,7 @@ import (
 	"crypto/aes"
 	"crypto/cipher"
 	"errors"	
-	"github.com/AdeSupriyadi/libs/utils/str"
+	"github.com/AdeSupriyadi/go-libs/utils/str"
 )
 
 func Encrypt(key, iv, text []byte) (string, error) {

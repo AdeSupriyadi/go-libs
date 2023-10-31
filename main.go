@@ -3,12 +3,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/AdeSupriyadi/libs/crypto/aes"
+	"github.com/AdeSupriyadi/go-libs/crypto/aes"
 )
 
 func main() {
 	privateKey := []byte("just private key")
-	plainText := "plain text"
+	plainText := "palin text"
 	encrypted, err := aes.Encrypt(privateKey, privateKey, []byte(plainText))
 	if err != nil {
 		panic(err.Error())
